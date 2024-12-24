@@ -1,50 +1,62 @@
-# Welcome to your Expo app 👋
+# Calculator App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a simple calculator application built using React Native. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Perform basic arithmetic operations: addition (+), subtraction (-), multiplication (*), and division (/).
+- Clear the input and result using the "C" button.
+- Display the result of calculations using the "=" button.
+- Stylish user interface with responsive layout.
 
+### Prerequisites
+
+- Node.js installed on your system.
+- React Native environment set up. Refer to the [React Native CLI Quickstart](https://reactnative.dev/docs/environment-setup) for guidance.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/calculator-app.git
+   cd calculator-app
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the application:
+   - For Android:
+     ```bash
+     npx react-native run-android
+     
+### Key Components:
 
-   ```bash
-    npx expo start
-   ```
+1. **Display Section**: Displays the user's input and the calculated result.
+   - `input` stores the arithmetic expression entered by the user.
+   - `result` stores the evaluation of the input.
 
-In the output, you'll find options to open the app in a
+2. **Button Grid**: Contains buttons for digits, operators, and actions like clear (`C`) and equals (`=`).
+   - Buttons are dynamically rendered using a 2D array for rows and columns.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+3. **Footer**: Displays the text "Calc by [Your Name]" at the bottom of the screen.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+4. **Styles**: Custom styles for layout and button appearance, including the green background for the "=" button.
 
-## Get a fresh project
+### Styling Highlights
 
-When you're ready, run:
+- The `equalButton` style ensures the "=" button has a distinct green background.
+- The `footer` section at the bottom provides a personalized touch with the developer's name.
 
-```bash
-npm run reset-project
-```
+## Usage
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+1. Enter numbers and operators using the buttons.
+2. Press the "=" button to compute the result.
+3. Use the "C" button to clear the input and result.
+4. The footer at the bottom displays the text "Calc by [Your Name]".
 
-## Learn more
+## Screenshots
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![image](https://github.com/user-attachments/assets/9688b02b-7af5-41ea-a342-de8ced841130)
